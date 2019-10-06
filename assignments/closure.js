@@ -3,8 +3,20 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
+let numbers = [23, 24, 45, 46];
 
-
+function question(answer){
+  //What number is you favorite number?
+  const myQuestion = 'What number is your favorite number?';
+  
+  return myQuestion + " " + answer;
+  //return myQuestion + numbers[answer] //option for embedded function.
+}
+//console.log(question(3));
+function answer(i){
+    return numbers[i]
+}
+  console.log(question(answer(2)));
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
